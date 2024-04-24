@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "packet-exception-logger",
+  "version": "${version}",
+  "name": "packet-exception-logger",
+  "description": "Logs packet errors to console",
+  "authors": [
+    "Redned"
+  ],
+  "contact": {
+    "repo": "https://github.com/Redned235/packet-exception-logger"
+  },
+  "license": "MIT",
+  "icon": "assets/packet-exception-logger/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.redned.packetexceptionlogger.PacketExceptionLogger"
+    ]
+  },
+  "mixins": [
+    "packet-exception-logger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
